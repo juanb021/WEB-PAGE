@@ -34,6 +34,17 @@ h2 {
     padding: 15px 0;
     font-size: 2rem;
 }
+
+.section-text {
+    font-size: 1.3rem;
+    margin: 15px auto;
+    text-align: justify;
+}
+
+.titulo-card {
+    font-family: "Poppins", sans-serif;
+    margin: 10px auto;
+}
 /* Navegacion */
 .navbar {
     padding: 2rem;
@@ -83,17 +94,34 @@ h2 {
     padding: 15px;
 }
 
-.section-text {
-    font-size: 1.3rem;
-    margin: 15px auto;
-    text-align: justify;
-}
-
 .about-section .contenedor {
     max-width: 600px;
     padding: 20px;
 }
 /* Seccion Skills */
+.skills-section {
+    padding: 40px;
+}
+
+.skills-section .row div {
+    height: 250px;
+    max-width: 410px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.skills-section .row div:hover {
+    box-shadow: 0 0 5px rgb(35, 40, 48);
+    background-color: rgb(35, 40, 48);
+    color: white;
+}
+@media screen and (max-width:760px){
+    .skills-section .row div {
+        margin: 20px auto;
+    }
+    
+}
 /* Seccion Projectos */
 /* Seccion Estudios */
 /* Seccion Contacto */
