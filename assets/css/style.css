@@ -103,18 +103,42 @@ h2 {
     padding: 40px;
 }
 
-.skills-section .row div {
-    height: 250px;
+.columna {
+    min-height: 250px;
     max-width: 410px;
+    border: 1px solid rgb(35, 40, 48);
     border-radius: 10px;
     margin: 10px;
+    padding-top: 20px;
     transition: 0.3s ease-in-out;
 }
 
-.skills-section .row div:hover {
+.columna:hover {
     box-shadow: 0 0 5px rgb(35, 40, 48);
     background-color: rgb(35, 40, 48);
     color: white;
+}
+
+.columna p {
+    font-size: 1.1rem;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.skill-icon {
+    
+    font-size: 2rem;
+}
+
+.badge-container {
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.badge {
+    padding: 10px;
 }
 @media screen and (max-width:760px){
     .skills-section .row div {
