@@ -18,6 +18,7 @@ section {
 
 .dark-section {
     color: rgb(245, 246, 247);
+    background-color: rgb(35, 40, 48);
 }
 
 h1 {
@@ -44,6 +45,10 @@ h2 {
 .titulo-card {
     font-family: "Poppins", sans-serif;
     margin: 10px auto;
+}
+
+.yellow {
+    color: rgb(254,240,138);
 }
 /* Navegacion */
 .navbar {
@@ -87,7 +92,6 @@ h2 {
 }
 /* Seccion About */
 .about-section {
-    background-color: rgb(35, 40, 48);
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -147,6 +151,64 @@ h2 {
     
 }
 /* Seccion Projectos */
+.projects-section {
+    padding: 40px;
+}
+
+.project {
+    position: relative;
+}
+
+.proy-img {
+    height: 250px;
+    width: 100%;
+    box-shadow: 0 0 5px white;
+    border-radius: 10px;
+    display: block;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 35px;
+    object-fit: cover;
+}
+
+.project-container {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0;
+
+}
+
+.project:hover img {
+    opacity: 0.2;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+    display: flex;
+}
+
+.overlay i {
+    color: rgb(254,240,138);
+    font-size: 50px;
+    margin: 10px;
+}
 /* Seccion Estudios */
 /* Seccion Contacto */
 /* Footer */
